@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>G-Pac</title>
+      <link rel="stylesheet" href="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.css">
+      <script type="text/javascript" src="/CSS\js\10thEncrypt.js"></script>
+      <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.js"></script>
+      <style media="screen">
+      </style>
+    </head>
+  <body>
+        <div name = "MathSection">
+          <div class="ui left small labeled input" name = "MathInput">
+            <input type="text" placeholder="Math Score" id="Math">
+
+            </div>
+            <select class="ui dropdown label" id="MathLevel">
+          <option value="">Level</option>
+          <option value="S1">S</option>
+          <option value="S2">S+</option>
+          <option value="H">H</option>
+
+            </select>
+            </div>
+        <br>
+        <div name = "ChineseSection">
+          <div class="ui left small labeled input"  name = "ChineseInput">
+
+              <input type="text" placeholder="Chinese Score" id="Chi">
+
+
+            </div>
+            <select class="ui dropdown label" id="ChiLevel">
+              <option value="">Level</option>
+              <option value="N1">N1</option>
+              <option value="N2">N2</option>
+              <option value="N3">N3</option>
+              <option value="N4">N4</option>
+              <option value="N5">N5</option>
+              <option value="AP">AP</option>
+              <option value="S1">S</option>
+              <option value="H1">H</option>
+              <option value="H2">H+</option>
+
+            </select>
+              </div>
+        <br>
+        <div name = "EnglishSection">
+          <div class="ui left small labeled input" name = "EnglishInput">
+
+              <input type="text" placeholder="English Score" id="Eng">
+
+
+            </div>
+            <select class="ui dropdown label" id="EngLevel">
+              <option value="">Level</option>
+              <option value="S1">S</option>
+              <option value="S2">S+</option>
+              <option value="H1">H</option>
+              <option value="H2">H+</option>
+              </select>
+        </div>
+        <br>
+        <div name = "PhysicsSection">
+          <div class="ui left small labeled input" name = "PhysicsInput">
+
+            <input type="text" placeholder="Physics Score" id="Phy">
+
+          </div>
+          <select class="ui dropdown label" id="PhyLevel">
+            <option value="">Level</option>
+            <option value="S1">S</option>
+            <option value="S2">S+</option>
+            <option value="H">H</option>
+          </select>
+        </div>
+        <br>
+        <div name = "HistorySection">
+          <div class="ui left small labeled input" name = "HistoryInput">
+
+              <input type="text" placeholder="History Score" id="His">
+
+            </div>
+            <select class="ui dropdown label" id="HisLevel">
+              <option value="">Level</option>
+              <option value="S1">S</option>
+              <option value="S2">S+</option>
+              <option value="H">H</option>
+              <option value="AP">AP</option>
+            </select>
+        </div>
+        <br>
+        <div name = "ChemistrySection">
+          <div class="ui left right action small labeled input" name = "ChemistryTextArea">
+
+              <input type="text" placeholder="Chemistry Score" id="Chem">
+
+            </div>
+            <select class="ui dropdown label" id="ChemLevel">
+              <option value="">Level</option>
+              <option value="S1">S</option>
+              <option value="S2">S+</option>
+              <option value="H">H</option>
+            </select>
+        </div>
+        <br>
+        <div name = "Elective1Section">
+          <div class="ui left small labeled input" name = "Elective1TextArea">
+
+              <input type="text" placeholder="Elective Score" value = "" id="Ele1">
+
+            </div>
+            <select class="ui dropdown label" id="Ele1Level">
+              <option value="">Level</option>
+              <option value="S1">S</option>
+              <option value="S2">S+</option>
+              <option value="H">H</option>
+            </select>
+        </div>
+        <br>
+        <div name = "Elective2Section">
+          <div class="ui left small labeled input" name = "Elective2TextArea">
+
+              <input type="text" placeholder="Elective Score" value = "" id="Ele2">
+
+            </div>
+            <select class="ui dropdown label" id="Ele2Level">
+              <option value="">Level</option>
+              <option value="S1">S</option>
+              <option value="S2">S+</option>
+              <option value="H">H</option>
+            </select>
+        </div>
+        <br>
+        <div name = "ConfirmButton">
+          <div class="ui small left action input">
+            <div class="ui green button" onclick="Run()">
+              <i class="checkmark  "></i>
+              Calculate
+            </div>
+            <input type="text" value="" placeholder="Your GPA is......" id="ResultArea">
+          </div>
+        </div>
+        <br>
+      </div>
+    <script>
+          $('.ui.dropdown')
+        .dropdown()
+        ;
+          $('#select')
+            .dropdown()
+            ;
+
+    </script>
+    </body>
+    </html>

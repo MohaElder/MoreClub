@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WCG-More Edition</title>
+<link rel="stylesheet" href="Semantic-UI-CSS-master\semantic.css">
+<link rel="javascript" href="Semantic-UI-CSS-master\semantic.min.js">
+<link rel="javascript" href="Semantic-UI-CSS-master\jquery-3.1.1.min.js">
+<script src="./Word Cloud Generator_files/ca-pub-2911491153890039.js"></script><script type="text/javascript" async="" src="./Word Cloud Generator_files/ga.js"></script>
+<style name = "SVG Format">
+  body {
+    position: relative;
+    font-family: "Helvetica Neue", sans-serif;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 20px;
+  }
+  </style>
+</head>
+<body>
+  <div class="ui inverted segment" name = "Top Menu">
+    <div class="ui stackable inverted secondary pointing menu">
+      <a class="item" href="index.html">Home </a>
+      <a class="item" href="GPACSelect.html">G-Pac </a>
+      <a class="item active" href="#">WCG </a>
+    </div>
+  </div>
+<div class="ui attached stackable menu">
+  <div class="ui center aligned container">
+    <div id="vis">
+    </div><form id="form">
+    <div class="ui massive segment">
+      <h2 class="ui icon header">
+        <i class="spinner icon"></i>
+        <div class="content">WCGM<div class="sub header">This is a project based on Jason Davies's Word Cloud Generator, More Club modified its user interface and improved some of the functions to make it even better!</div>
+        </div>
+      </h2>
+      <div name="InputArea" class="ui massive ">
+        <div id="presets"></div>
+        <div id="custom-area" class="ui form">
+          <div class="field">
+            <label for="text">Paste your text below!</label>
+            <textarea id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+            <button id="go" type="submit" class="ui button">Go!</button>
+          </div>
+        </div>
+      </div>
+      <div name="Download" class="ui massive ">
+        <div class="ui input">
+        <input type="number" placeholder = "Number of words" value="100" min="1" id="max">
+        </div>
+        <br>
+        <div class="ui massive toggle checkbox">
+          <input type="checkbox" id="per-line">
+          <label for="per-line">One word per line</label>
+        </div>
+        <button id="download-svg" class="ui button">Download</button>
+        </div>
+      <div name = "Settings">
+        <div class="ui form" name = "Spiral">
+          <div class="grouped fields">
+            <label>Spiral</label>
+            <div class="field">
+              <div class="ui slider checkbox">
+                <input type="radio" name="spiral" id="rectangular" value="rectangular" checked="checked">
+                <label for="rectangular">Rectangular</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui slider checkbox">
+                <input  type="radio" name="spiral" id="archimedean" value="archimedean">
+                <label for="archimedean">Archimedean</label>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui form" name = "Scale">
+          <div class="grouped fields">
+            <label for="scale">Scale</label>
+            <div class="field">
+              <div class="ui slider checkbox">
+                <input type="radio" name="scale" id="scale-log" value="log" checked="checked">
+                <label for="scale-log">log n</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui slider checkbox">
+                <input  type="radio" name="scale" id="scale-sqrt" value="sqrt">
+                <label for="scale-sqrt">√n</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui slider checkbox">
+                <input type="radio" name="scale" id="scale-linear" value="linear">
+                <label for="scale-linear"> n</label>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="ui input">
+            <input type="text" id="font" value="Impact" placeholder="Font">
+          </div>
+
+        </div>
+        </div>
+
+      <script src="./Word Cloud Generator_files/d3.min.js"></script>
+  <script src="./Word Cloud Generator_files/cloud.min.js"></script><form action="https://www.jasondavies.com/echo" target="_blank" method="POST"><input type="hidden" name="content-type"><input type="hidden" name="echo"></form>
+</div>
+</body></html>
